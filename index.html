@@ -16,7 +16,6 @@
     function Btn({text, fontSize = 16}) {
         return (
             <button 
-            onClick={changeValue}
             style={{
             backgroundColor: "tomato",
             color: "white",
@@ -31,7 +30,7 @@
     );
     }
     Btn.propTypes = {
-	text:  PropTypes.string,isRequired,
+	text: PropTypes.string.isRequired,
 	fontSize: PropTypes.number,
 };
     function App () {
@@ -40,7 +39,7 @@
       return (
         <div>
             <Btn text="Save Changes" fontSize={18} />   
-            <Btn text={14} fontSize={"Continue"} />
+            <Btn text={"Continue"} fontSize={14} />
         </div>
       );
     };
